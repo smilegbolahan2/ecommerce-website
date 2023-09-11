@@ -1,0 +1,280 @@
+{% load cart_template_tags %}
+
+{% load static %}
+
+<!-- Topbar Start -->
+<div class="container-fluid">
+  <div class="row bg-secondary py-2 px-xl-5">
+      <div class="col-lg-6 d-none d-lg-block">
+          <div class="d-inline-flex align-items-center">
+              <a class="text-dark" href="">FAQs</a>
+              <span class="text-muted px-2">|</span>
+              <a class="text-dark" href="">Help</a>
+              <span class="text-muted px-2">|</span>
+              <a class="text-dark" href="">Support</a>
+          </div>
+      </div>
+      <div class="col-lg-6 text-center text-lg-right">
+          <div class="d-inline-flex align-items-center">
+              <a class="text-dark px-2" href="">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="text-dark px-2" href="">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a class="text-dark px-2" href="">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a class="text-dark px-2" href="">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a class="text-dark pl-2" href="">
+                  <i class="fab fa-youtube"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="row align-items-center py-3 px-xl-5">
+      <div class="col-lg-3 d-none d-lg-block">
+          <a href="" class="text-decoration-none">
+              <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+          </a>
+      </div>
+      <div class="col-lg-6 col-6 text-left">
+          <form action="">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for products">
+                  <div class="input-group-append">
+                      <span class="input-group-text bg-transparent text-primary">
+                          <i class="fa fa-search"></i>
+                      </span>
+                  </div>
+              </div>
+          </form>
+      </div>
+      <div class="col-lg-3 col-6 text-right">
+          <a href="" class="btn border">
+              <i class="fas fa-heart text-primary"></i>
+              <span class="badge">0</span>
+          </a>
+          <a href="" class="btn border">
+              <i class="fas fa-shopping-cart text-primary"></i>
+              <span class="badge">0</span>
+          </a>
+      </div>
+  </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid mb-5">
+  <div class="row border-top px-xl-5">
+      <div class="col-lg-3 d-none d-lg-block">
+          <a class="btn shadow-none d-flex align-items-center justify-content-between text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="background-color: #3e81cd; color:white; height: 65px; margin-top: -1px; padding: 0 30px;">
+              <h6 class="m-0", style="color:white;">Categories</h6>
+              <i class="fa fa-angle-down text-dark"></i>
+          </a>
+          <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+              <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link" data-toggle="dropdown">Air conditioners <i class="fa fa-angle-down float-right mt-1"></i></a>
+                      <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                          <a href="" class="dropdown-item">Split AC</a>
+                          <a href="" class="dropdown-item">Inverter AC</a>
+                          <a href="" class="dropdown-item">Standing AC</a>
+                          <a href="" class="dropdown-item">Air purifiers and coolers</a>
+                      </div>
+                      
+                  </div>
+                  
+                  <a href="" class="nav-item nav-link">Audio</a>
+                  <a href="" class="nav-item nav-link">Cameras</a>
+                  <a href="" class="nav-item nav-link">Fans</a>
+                  <a href="" class="nav-item nav-link">Freezers</a>
+                  <a href="" class="nav-item nav-link">Gas cookers</a>
+                  <a href="" class="nav-item nav-link">Homeware</a>
+                  <a href="" class="nav-item nav-link">Kitchen Appliances</a>
+                  <a href="" class="nav-item nav-link">Refrigerators</a>
+                  <a href="" class="nav-item nav-link">Television</a>
+                  <a href="" class="nav-item nav-link">Washing machine</a>
+                  
+              </div>
+          </nav>
+      </div>
+      <div class="col-lg-9">
+          <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+              <a href="" class="text-decoration-none d-block d-lg-none">
+                  <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+              </a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                  <div class="navbar-nav mr-auto py-0">
+                      <a href="index.html" class="nav-item nav-link active">Home</a>
+                      
+                      <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Air conditioner</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="cart.html" class="dropdown-item">Split AC</a>
+                            <a href="checkout.html" class="dropdown-item">Inverter AC</a>
+                            <a href="checkout.html" class="dropdown-item">Standing AC</a>
+                            <a href="checkout.html" class="dropdown-item">Air purifiers and coolers</a>
+                        </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Audio</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="cart.html" class="dropdown-item">Media players</a>
+                            <a href="checkout.html" class="dropdown-item">Headphones</a>
+                            <a href="checkout.html" class="dropdown-item">Speakers</a>
+                            <a href="checkout.html" class="dropdown-item">Home theatre systems and sound bars</a>
+                        </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kitchen Appliances</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="cart.html" class="dropdown-item">Gas cookers</a>
+                            <a href="checkout.html" class="dropdown-item">Freezers</a>
+                            <a href="checkout.html" class="dropdown-item">Refrigerators</a>
+                            
+                        </div>
+                      </div>
+                      <a href="index.html" class="nav-item nav-link">Camera</a>
+                      <a href="index.html" class="nav-item nav-link">Fans</a>
+                      <a href="index.html" class="nav-item nav-link">Television</a>
+                  </div>
+                  <div class="navbar-nav ml-auto py-0">
+                      <a href="" class="nav-item nav-link">Login</a>
+                      <a href="" class="nav-item nav-link">Register</a>
+                  </div>
+              </div>
+          </nav>
+          <div id="header-carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active" style="height: 410px;">
+                      <img class="img-fluid" src="{% static 'img/sony1.jpg' %}" alt="Image">
+                      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                          <div class="p-3" style="max-width: 700px;">
+                              <h4 class="text-light text-uppercase font-weight-medium mb-3">Prompt delivery</h4>
+                              <h3 class="display-4 text-white font-weight-semi-bold mb-4">Genuine Electronics</h3>
+                              <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item" style="height: 410px;">
+                      <img class="img-fluid" src="{% static 'img/scanfrost1.jpg' %}" alt="Image">
+                      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                          <div class="p-3" style="max-width: 700px;">
+                              <h4 class="text-light text-uppercase font-weight-medium mb-3">Customer satisfaction</h4>
+                              <h3 class="display-4 text-white font-weight-semi-bold mb-4">Affordable Price</h3>
+                              <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                  <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                      <span class="carousel-control-prev-icon mb-n2"></span>
+                  </div>
+              </a>
+              <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                  <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                      <span class="carousel-control-next-icon mb-n2"></span>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Navbar End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand waves-effect" href="/">
+        <strong class="blue-text">DJe-commerce</strong>
+      </a>
+
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto">
+          {% comment %} <li class="nav-item active">
+            <a class="nav-link waves-effect" href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="/checkout">
+            Checkout</a>
+          </li> {% endcomment %}
+        </ul>
+
+       
+        <ul class="navbar-nav nav-flex-icons">
+          {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <a href="{% url 'core:order-summary' %}" class="nav-link waves-effect">
+              <span class="badge red z-depth-1 mr-1"> {{ request.user|cart_item_count }} </span>
+              <i class="fas fa-shopping-cart"></i>
+              <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'account_logout' %}">
+              <span class="clearfix d-none d-sm-inline-block"> Logout </span>
+            </a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'account_login' %}">
+              <span class="clearfix d-none d-sm-inline-block"> Login </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'account_signup' %}">
+              <span class="clearfix d-none d-sm-inline-block"> Signup </span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+-->
+
+  
